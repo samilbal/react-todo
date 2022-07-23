@@ -31,7 +31,7 @@ function Todo({ todo, dispatch }) {
       >
         delete
       </button>
-      <button
+      {/* <button
         onClick={() =>
           dispatch({
             type: ACTIONS.EDIT_TODO,
@@ -42,7 +42,7 @@ function Todo({ todo, dispatch }) {
         }
       >
         edit
-      </button>
+      </button> */}
     </div>
   );
 }

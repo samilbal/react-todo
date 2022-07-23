@@ -16,13 +16,13 @@ function reducer(todos, action) {
       });
     case ACTIONS.DELETE_TODO:
       return todos.filter((todo) => todo.id !== action.payload.id);
-    case ACTIONS.EDIT_TODO:
-      return todos.map((todo) => {
-        if (todo.id === action.payload.id) {
-          return { ...todo, title: action.payload.title };
-        }
-        return todo;
-      });
+    // case ACTIONS.EDIT_TODO:
+    //   return todos.map((todo) => {
+    //     if (todo.id === action.payload.id) {
+    //       return { ...todo, title: action.payload.title };
+    //     }
+    //     return todo;
+    //   });
     default:
       return todos;
   }
